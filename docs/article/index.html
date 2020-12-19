@@ -36,7 +36,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ytakaya.github.io/blog/article/" />
-<meta property="og:updated_time" content="2020-12-18T17:34:26+09:00" />
+<meta property="og:updated_time" content="2020-12-18T11:18:05+09:00" />
 <meta itemprop="name" content="Articles">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -133,27 +133,24 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Article</span>
     <h1 class="f3 near-black">
-      <a href="https://ytakaya.github.io/blog/article/sample/" class="link black dim">
-        Sample
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Article</span>
-    <h1 class="f3 near-black">
       <a href="https://ytakaya.github.io/blog/article/hello-hugo/" class="link black dim">
-        Github &#43; Hugoを使ってブログを公開する
+        Hugo&#43;Github Pagesを使ってブログを公開する
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      
+      HugoとGithub Pagesを使ってブログを公開したので、その備忘録です。
+Hugoとは HugoとはGo製の静的サイトジェネレーターです。静的サイトジェネレーターとは、事前に用意したテンプレートとコンテンツから静的なサイトを生成してくれるツールです。有名な静的サイトジェネレーターには、Gatsby、Next、Nuxt、Hugoなどが上げられます。こちらのサイトに様々な静的サイトジェネレータがGithubのスター数などと一緒に見ることができます。
+ブログ公開の方法には、
+ Qiitaやはてなブログなどのブログサービスを利用する方法 WordPressなどのCMSを利用する方法 静的サイトジェネレーターを利用する方法  などが考えられます。この中でも静的サイトジェネレーターを利用するメリットは、ブログサービスなどと比較して高速である、自分でカスタマイズ可能な範囲が広い、CMSと比較してサーバーが必要ない、などが上げられます。速度については画像の重さなどにも影響を受けるため一概に速いとは言えないようです1、今度検証してみたい。
+Hugoのインストールとブログの作成 インストール 環境は以下の通り
+ macOS Catalina 10.15.6  macではbrewを使ってインストールできます。
+$ brew install hugo ブログの作成 先ほどインストールしたHugoを使ってブログを作成します。
+$ hugo new site sample-site このコマンドを実行するとsample-siteというディレクトリが生成され、その中にブログの雛形が入っています。 ここで、git initしておきましょう。
+$ cd sample-site $ git init テーマの適用 次にブログに適用するテーマを選定します。Hugoで使えるテーマはこのサイトに列挙されています。ここから自分の好きなテーマを選んで/themes配下にgit submoduleを使ってcloneします。git submoduleとは、特定のリポジトリを現在のリポジトリ内の特定のディレクトリに紐付ける仕組みです。もちろん自分で0からテーマを作り上げることもできます。
+今回はanankeというテーマを使います。適用するテーマを決めたら、
+$ git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke 実行するコマンドは決めたテーマのオフィシャルページを参照してください。 自分でテーマを作る際はこのドキュメントを参照して作っていくのが良さそうです。既存テーマをちょっといじりたい際にも参考になります。
+最後に設定ファイルのconfig.tomlを編集してブログにテーマを適用します。
+baseURL = &quot;https://example.com&quot; # ブログの公開URL、あとで編集する languageCode = &quot;ja&quot; # 言語設定 title = &quot;my blog&quot; # ブログのタイトル theme = &quot;ananke&quot; # テーマ名。自分で選定したテーマ名にする hugo serveをしてテーマが適用されているか確認してみます。
     </div>
   </div>
 </div>

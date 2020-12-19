@@ -8,12 +8,24 @@
     <language>ja</language>
     <lastBuildDate>Fri, 18 Dec 2020 11:18:05 +0900</lastBuildDate><atom:link href="https://ytakaya.github.io/blog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Github &#43; Hugoを使ってブログを公開する</title>
+      <title>Hugo&#43;Github Pagesを使ってブログを公開する</title>
       <link>https://ytakaya.github.io/blog/article/hello-hugo/</link>
       <pubDate>Fri, 18 Dec 2020 11:18:05 +0900</pubDate>
       
       <guid>https://ytakaya.github.io/blog/article/hello-hugo/</guid>
-      <description></description>
+      <description>HugoとGithub Pagesを使ってブログを公開したので、その備忘録です。
+Hugoとは HugoとはGo製の静的サイトジェネレーターです。静的サイトジェネレーターとは、事前に用意したテンプレートとコンテンツから静的なサイトを生成してくれるツールです。有名な静的サイトジェネレーターには、Gatsby、Next、Nuxt、Hugoなどが上げられます。こちらのサイトに様々な静的サイトジェネレータがGithubのスター数などと一緒に見ることができます。
+ブログ公開の方法には、
+ Qiitaやはてなブログなどのブログサービスを利用する方法 WordPressなどのCMSを利用する方法 静的サイトジェネレーターを利用する方法  などが考えられます。この中でも静的サイトジェネレーターを利用するメリットは、ブログサービスなどと比較して高速である、自分でカスタマイズ可能な範囲が広い、CMSと比較してサーバーが必要ない、などが上げられます。速度については画像の重さなどにも影響を受けるため一概に速いとは言えないようです1、今度検証してみたい。
+Hugoのインストールとブログの作成 インストール 環境は以下の通り
+ macOS Catalina 10.15.6  macではbrewを使ってインストールできます。
+$ brew install hugo ブログの作成 先ほどインストールしたHugoを使ってブログを作成します。
+$ hugo new site sample-site このコマンドを実行するとsample-siteというディレクトリが生成され、その中にブログの雛形が入っています。 ここで、git initしておきましょう。
+$ cd sample-site $ git init テーマの適用 次にブログに適用するテーマを選定します。Hugoで使えるテーマはこのサイトに列挙されています。ここから自分の好きなテーマを選んで/themes配下にgit submoduleを使ってcloneします。git submoduleとは、特定のリポジトリを現在のリポジトリ内の特定のディレクトリに紐付ける仕組みです。もちろん自分で0からテーマを作り上げることもできます。
+今回はanankeというテーマを使います。適用するテーマを決めたら、
+$ git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke 実行するコマンドは決めたテーマのオフィシャルページを参照してください。 自分でテーマを作る際はこのドキュメントを参照して作っていくのが良さそうです。既存テーマをちょっといじりたい際にも参考になります。
+最後に設定ファイルのconfig.tomlを編集してブログにテーマを適用します。
+baseURL = &amp;quot;https://example.com&amp;quot; # ブログの公開URL、あとで編集する languageCode = &amp;quot;ja&amp;quot; # 言語設定 title = &amp;quot;my blog&amp;quot; # ブログのタイトル theme = &amp;quot;ananke&amp;quot; # テーマ名。自分で選定したテーマ名にする hugo serveをしてテーマが適用されているか確認してみます。</description>
     </item>
     
   </channel>

@@ -4,21 +4,6 @@
   
   <url>
     <loc>https://ytakaya.github.io/blog/article/</loc>
-    <lastmod>2020-12-18T17:34:26+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ytakaya.github.io/blog/article/sample/</loc>
-    <lastmod>2020-12-18T17:34:26+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ytakaya.github.io/blog/</loc>
-    <lastmod>2020-12-18T17:34:26+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ytakaya.github.io/blog/article/hello-hugo/</loc>
     <lastmod>2020-12-18T11:18:05+09:00</lastmod>
   </url>
   
@@ -28,7 +13,17 @@
   </url>
   
   <url>
+    <loc>https://ytakaya.github.io/blog/article/hello-hugo/</loc>
+    <lastmod>2020-12-18T11:18:05+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ytakaya.github.io/blog/tags/</loc>
+    <lastmod>2020-12-18T11:18:05+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ytakaya.github.io/blog/</loc>
     <lastmod>2020-12-18T11:18:05+09:00</lastmod>
   </url>
   
