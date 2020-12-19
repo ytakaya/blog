@@ -3,17 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ytakaya.github.io/blog/%E6%9B%B8%E8%A9%95/sample/</loc>
+    <lastmod>2020-12-18T17:42:19+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ytakaya.github.io/blog/</loc>
+    <lastmod>2020-12-18T17:42:19+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ytakaya.github.io/blog/%E6%9B%B8%E8%A9%95/</loc>
+    <lastmod>2020-12-18T17:42:19+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ytakaya.github.io/blog/article/</loc>
     <lastmod>2020-12-18T17:34:26+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://ytakaya.github.io/blog/article/sample/</loc>
-    <lastmod>2020-12-18T17:34:26+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ytakaya.github.io/blog/</loc>
     <lastmod>2020-12-18T17:34:26+09:00</lastmod>
   </url>
   

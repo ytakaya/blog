@@ -4,3 +4,5 @@ title = "yamazooooe's blog"
 theme = "ananke"
 publishDir = "docs"
 canonifyurls = true
+
+SectionPagesMenu = "main"
