@@ -7,6 +7,10 @@ canonifyurls = true
 
 SectionPagesMenu = "main"
 
+[taxonomies]
+tag = "tags"
+category = "categories"
+
 [params]
   favicon = ""
   site_logo = ""
